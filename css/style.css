@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+
+.menu-btn{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+  background: none;
+  border: none;
+  z-index: 999;
+}
+.close-menu{
+  display: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 60px; */
+  background-color: #242424;
+  padding: 10px 20px;
+}
+.header-element{
+  display: flex;
+  align-items: center;
+}
+.header-element a{
+  color: white;
+  text-decoration: none;
+}
+.spotify-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 43px;
+  height: 55px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  position: relative;
+}
+.spotify-link:hover{
+  /* border: 2px solid white; */
+
+}
+.spotify-link button{
+  width: 27px;
+  background: none;
+  border: none;
+}
+.spotify-link .img{
+  width: 100%;
+}
+.hover-dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  padding: 2px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.spotify-link:hover .hover-dropdown{
+  height: 26px;
+  opacity: 1;
+  visibility: visible;
+}
+.boomplay-img{
+  filter: invert(1);
+}
+.about{
+  font-family: "EB Garamond", serif;
+  font-size: 13px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.about:hover{
+  text-decoration: underline;
+}
+
+.page-name{
+  text-decoration: none;
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.page-name:hover{
+  opacity: 0.8;
+}
+
+/* social icons */
+.social-medias{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.photos button{
+  color: white;
+  background-color: transparent;
+  font-family: "EB Garamond", serif;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.active-photo-button{
+  text-decoration: underline;
+}
+.photos button:hover{
+  text-decoration: underline;
+}
+.insta-icon{
+  display: flex;
+  width: 20px;
+  position: relative;
+}
+.insta-icon .img{
+  width: 100%;
+  filter: invert(1);
+}
+.social-text-dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  padding: 2px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.tiktok-icon .social-text-dropdown{
+  width: 30px;
+  height: 70px;
+  padding: 2px 10px;
+  position: absolute;
+  right: 0;
+}
+.tiktok-icon.insta-icon:hover .social-text-dropdown{
+  width: 30px;
+  height: 50px;
+  padding: 2px 10px;
+  position: absolute;
+  /* top: 27px; */
+  right: 0;
+}
+.insta-icon:hover .social-text-dropdown{
+  height: 26px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* hero section */
+main{
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+}
+main .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.background-name{
+  display: none;
+  color: white;
+  font-size: 17px;
+  font-style: italic;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+.new-release-btn a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  padding: 8px 10px;
+  background-color: black;
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transition: 0.3s;
+  /* transform: translatex(50%); */
+}
+.new-release-btn a:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+.videos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  font-style: italic;
+}
+.videos-container h2{
+  font-size: 30px;
+}
+.video{
+  width: 100%;
+  /* height: 400px; */
+  aspect-ratio: 16 / 9;
+}
+.video iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* photo page */
+.photos-container .container-fluid{
+  padding: 20px 40px;
+}
+.photo-card{
+  height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.photo-card .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-card:hover{
+  opacity: 0.8;
+  /* transform: scale(1.1); */
+}
+
+
+.music-container{
+  padding: 20px 20px;
+}
+.music-container h2{
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 30px;
+}
+.music-card-body{
+  text-decoration: none;
+}
+.music-card{
+  height: 400px;
+  border-radius: 5px;
+  background-color: #242424;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.music-card:hover{
+  opacity: 0.8;
+}
+.misic-card-img{
+  height: 300px;
+}
+.music-card .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.misic-card-content{
+  padding: 10px 10px;
+}
+.music-card h5{
+  font-style: italic;
+  color: white;
+}
+.music-card p{
+  font-style: italic;
+  color: white;
+  text-decoration: underline;
+}
+
+
+.view-more-btn{
+  padding: 5px 20px;
+  color: white;
+  background-color: #242424;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.view-more-btn:hover{
+  text-decoration: underline;
+  transform: translateY(-5%);
+}
+
+/* about background */
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.about-container h5{
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 30px;
+}
+.about-background{
+  width: 100%;
+  aspect-ratio: 13 / 9;
+  /* margin-bottom: 20px; */
+  /* height: 100vh; */
+  position: relative;
+}
+.about-background .img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: invert(2); */
+}
+.about-name-body-position{
+  width: 400px;
+  font-weight: 600;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.about-name-body{
+  display: none;
+  width: 100%;
+  font-weight: 600;
+}
+
+/* footer section */
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: black;
+  padding: 20px 10px;
+}
+.social-medias-footer{
+  display: flex;
+  gap: 20px;
+}
+.insta-icon.social-footer-icon{
+  display: block;
+  /* filter: invert(2); */
+  /* background-color: red; */
+}
+.footer-name{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+
+@media screen and (max-width:772px) {
+  .menu-btn{
+    display: flex;
+  }
+  .social-medias{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 0;
+    background-color: #242424;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  .navactive.social-medias{
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+  .page-name{
+    display: none;
+  }
+  .background-name{
+    display: block;
+  }
+  .about-background{
+    position: unset;
+  }
+  .about-name-body.about-name-body-position{
+    display: none;
+  }
+  .about-name-body{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  .about-container h5{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .new-release-btn a{
+    position: absolute;
+    top: 90%;
+    left: 35%;
+  }
+  .about{
+    display: none;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .new-release-btn a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
