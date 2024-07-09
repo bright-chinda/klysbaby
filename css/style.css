@@ -49,10 +49,6 @@ header{
   transition: 0.3s;
   position: relative;
 }
-.spotify-link:hover{
-  /* border: 2px solid white; */
-
-}
 .spotify-link button{
   width: 27px;
   background: none;
@@ -346,7 +342,8 @@ main .img{
 }
 .about-name-body-position{
   width: 400px;
-  font-weight: 600;
+  /* color: white; */
+  font-weight: 700;
   position: absolute;
   top: 40px;
   left: 30px;
@@ -416,7 +413,7 @@ footer{
   .about-background{
     position: unset;
   }
-  .about-name-body.about-name-body-position{
+  .about-name-body-position{
     display: none;
   }
   .about-name-body{
